@@ -57,7 +57,7 @@
 	/* HERO
 	================================================== */
 	.hero h1 {
-		font-size: 38px
+		font-size: 30px;
 	}
 
 	.job-title {
@@ -65,7 +65,9 @@
 	}
 
 	.hero img {
-		height: 420px;
+		height: 500px;
+		width: 300px;
+		margin-bottom: 350px;
 	}
 
 	/* SITEMAIN
@@ -136,8 +138,9 @@
 @media only screen and (max-width : 767px) {
 	/* CUSTOM RESETS
 	================================================== */
+
 	h4 {
-		font-size: 20px;
+		font-size: 80px;
 	}
 
 	/* Buttons */ 
@@ -166,6 +169,7 @@
 	.site-logo img {
 		height: 22px;
 	}
+	
 
 	/* Navigation */
 	.navbar-toggle {
@@ -309,7 +313,7 @@
 
 	.hero img {
 		height: 200px;
-		width: 130px;
+		width: 150px;
 		margin-bottom: 300px;
 		margin-left: 20px;
 	}
