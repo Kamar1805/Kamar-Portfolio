@@ -172,6 +172,9 @@ html, body {
 
 .site-logo img {
     padding-bottom: 2px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
 }
 
 /* Navigation */
@@ -254,7 +257,10 @@ html, body {
 } 
 
 .hero img {
-    height: 600px;
+    height: 700px;
+    width: 500px;
+    border-radius: 40%;
+    margin-bottom: 20px;
 }
 
 /* SITEMAIN
@@ -262,7 +268,7 @@ html, body {
 .site-main {
     position: relative;
     margin-bottom: 100px;
-    background-color: #fff;
+    background-color: #BEB7A4;
     z-index: 1;
 }
 /* site-section */
