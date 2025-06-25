@@ -646,7 +646,8 @@ a.icon-up-bg:hover {color: #212121;}
         max-width: 100%;
         flex: 0 0 100%;
         padding: 10px 0;
-        text-align: center;
+
+        
     }
 
     #hero .col-md-6:first-child {
@@ -655,9 +656,22 @@ a.icon-up-bg:hover {color: #212121;}
 
     #hero .col-md-6:last-child {
         order: 2;
+        right: -20px;
     }
 
     #hero img {
-        width: 70%;
+        width: 60%;
+        right: -50px;
     }
+
+    
+}
+
+
+html {
+    background-color: #BEB7A4;
+}
+
+body {
+    background-color: #BEB7A4;
 }

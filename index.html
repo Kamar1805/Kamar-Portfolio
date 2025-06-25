@@ -41,6 +41,290 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<style>
+    .section-form {
+  background-color: lightslategrey;
+  padding: 60px 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.section-form h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.img-lines {
+  margin-bottom: 30px;
+  max-width: 100px;
+}
+
+.section-form .form-control {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease;
+  color: #000;
+
+}
+
+.section-form .form-control:focus {
+  border-color: #00aaff;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 170, 255, 0.1);
+}
+
+.section-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.section-form .btn {
+  background-color: #00aaff;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.section-form .btn:hover {
+  background-color: #008ecc;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .section-form .col-sm-6,
+  .section-form .col-sm-12 {
+    margin-bottom: 20px;
+  }
+}
+
+.section-form ::placeholder {
+  color: #000;
+  opacity: 1; /* Ensures full black and not greyed out */
+}
+
+.section-form :-ms-input-placeholder {
+  color: #000;
+}
+
+.section-form ::-ms-input-placeholder {
+  color: #000;
+}
+
+.section-form ::-webkit-input-placeholder {
+  color: #000;
+}
+
+.swiper {
+  padding: 40px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+.portfolio-item-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 10px 15px;
+  text-align: left;
+  transition: background 0.3s ease;
+}
+
+.portfolio-item-info h4 {
+  font-size: 1rem;
+  margin: 0;
+  color: #fff;
+}
+
+.portfolio-item-info a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+
+.img-res {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.swiper-slide {
+  height: 300px; /* Or adjust to fit your taste */
+  display: flex;
+  align-items: stretch;
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    height: 250px;
+  }
+}
+
+.section-counters {
+  background: #f4f4f4;
+  padding: 60px 20px;
+}
+
+.section-counters .counter {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #00aaff;
+  margin-bottom: 10px;
+}
+
+.section-counters h4 {
+  font-size: 1.4rem;
+  color: #333;
+}
+@media (max-width: 768px) {
+  .section-counters .counter {
+    font-size: 2.8rem;
+  }
+
+  .section-counters h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-counters .counter {
+    font-size: 2.2rem;
+  }
+
+  .section-counters h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-counters .col-sm-4 {
+    margin-bottom: 30px;
+  }
+}
+
+.footer-container {
+  background-color: #BEB7A4;
+  padding: 10px 0;
+}
+
+.footer-container .row {
+  margin: 0;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-container .col-sm-4,
+.footer-container .col-xs-12 {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.footer-container .icon {
+  font-size: 1.4rem;
+  margin: 0 8px;
+  color: #333;
+}
+
+.footer-container .copyright {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #222;
+}
+
+.footer-container .page-scroll {
+  text-align: center;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .footer-container .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-container .page-scroll {
+    margin-top: 10px;
+  }
+}
+
+
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+/* Make Swiper arrows bigger and move them outward */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+  font-size: 3rem;            /* Make arrows larger */
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+/* Move arrows further away from the content */
+.swiper-button-prev {
+  left: -20px; /* pull it outside to the left */
+}
+
+.swiper-button-next {
+  right: -20px; /* pull it outside to the right */
+}
+
+/* Optional: Add hover effect for interaction */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: translateY(-50%) scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+
+</style>
 </head>
 <body>
 
@@ -84,7 +368,7 @@
                 <div class="col-md-6">
                     <h1 class="name">Abubakar <br> Kamarudeen</h1>
                     <div class="page-scroll">
-                        <p class="job-title">-Software Developer <br><br> -Problem Solver <br> <br> -AI Practitioner</p>
+                        <p class="job-title">-Software Engineering Student <br><br> -Problem Solver <br> <br> -AI Practitioner</p>
                         <a href="#contact" class="btn btn-fill ">Hire me</a>
                         <div class="clearfix visible-xxs"></div>
                         <a href="#portfolio" class="btn btn-border">Explore more</a>
@@ -107,7 +391,7 @@
                     <div class="col-md-6 col-md-offset-3">
                         <h2>About Kamar</h2>
                         <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                        <p>Hello! I'm Kamar—a tech-savvy problem solver and AI enthusiast. I have a deep passion for tackling challenges and finding innovative solutions. As the Co-founder of Tourify, I’m always exploring new ways to leverage technology for impactful results. I’m currently open to freelance work, internships, and job opportunities. Beyond coding, I also enjoy playing basketball. If you have a project in mind or think we’d be a great fit to collaborate, let’s connect! 🙂.</p>
+                        <p>Hello! I'm Kamar—a tech-savvy problem solver and AI enthusiast. I have a deep passion for tackling challenges and finding innovative solutions. As the Co-founder of Tourify and founder of QueueTrackr, I’m always exploring new ways to leverage technology for impactful results. I’m currently open to freelance work, internships, and job opportunities. Beyond coding, I also enjoy playing basketball. If you have a project in mind or think we’d be a great fit to collaborate, let’s connect! 🙂.</p>
                         <a href="assets/Resume-Kamarudeen-Abubakar.pdf" class="btn btn-fill" target="_blank" download>Download my Resume</a>
                     </div>
                 </div>
@@ -123,41 +407,41 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="skill">
-                            <h4>Html/css</h4>
+                            <h4>Full Stack Web Development</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="84"></div><!-- /.progress-bar -->
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="74"></div><!-- /.progress-bar -->
                             </div><!-- /.progress -->
                         </div><!-- /.skill -->
                         <div class="skill">
-                            <h4>TIME MANAGEMENT</h4>
+                            <h4>Mobile App Development</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="75"></div><!-- /.progress-bar -->
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="65"></div><!-- /.progress-bar -->
                             </div><!-- /.progress -->
                         </div><!-- /.skill -->
                     </div>
                     <div class="col-md-4">
                         <div class="skill">
-                            <h4>Javascript</h4>
+                            <h4>AI tools leverage</h4>
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" data-transitiongoal="62"></div><!-- /.progress-bar -->
                             </div><!-- /.progress -->
                         </div><!-- /.skill -->
                         <div class="skill">
-                            <h4>AI Tools Utilization</h4>
+                            <h4>Time Management</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="66"></div><!-- /.progress-bar -->
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="90"></div><!-- /.progress-bar -->
                             </div><!-- /.progress -->
                         </div><!-- /.skill -->
                     </div>
                     <div class="col-md-4">
                         <div class="skill">
-                            <h4>UI/UX Design</h4>
+                            <h4>Project/Task Management</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="97"></div><!-- /.progress-bar -->
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="75"></div><!-- /.progress-bar -->
                             </div><!-- /.progress -->
                         </div><!-- /.skill -->
                         <div class="skill">
-                            <h4>C/Java</h4>
+                            <h4>Communication/ Networking</h4>
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" data-transitiongoal="85"></div><!-- /.progress-bar -->
                             </div><!-- /.progress -->
@@ -177,15 +461,15 @@
                     <div class="col-sm-4">
                         <div class="service">
                             <img src="assets/img/front-end.svg" alt="Front End Developer">
-                            <h4>Web Design and <br>Front-end</h4>
-                            <p>As a front-end developer, I have 2 years of experience in HTML and CSS and I have engaged in multiple projects. Also, utilizing templates and AI tools has also uplifted my skills in front end development, enhancing my code quality and visual aesthetics.</p>
+                            <h4>Full-Stack <br>Web Development</h4>
+                            <p>As a full-stack developer, I have 2 years of experience in HTML and CSS and I have engaged in multiple projects. Also, utilizing templates and AI tools has also uplifted my skills in front end and backend development, enhancing my code quality and visual aesthetics.</p>
                         </div><!-- /.service -->
                     </div>
                     <div class="col-sm-4">
                         <div class="service">
                             <img src="assets/img/back-end.svg" alt="Back End Developer">
                             <h4>SOLVE PROBLEMS</h4>
-                            <p>I solve problems by writing clean and efficient code in C, Java, and JavaScript. Having built projects like a GPA calculator, a number generator, and more, I focus on creating reliable and optimized software to tackle real-world challenges. From logic-heavy computations to user-friendly interfaces, I turn ideas into functional and practical solutions.</p>
+                            <p>I solve problems by creating innovative solutions. Having built projects like a GPA calculator, a Queue Tracker app, board game tracker, roommate matching app, and more. I focus on creating reliable and optimized software to tackle real-world challenges. From logic-heavy computations to user-friendly interfaces, I turn ideas into functional and practical solutions.</p>
                         </div><!-- /.service -->
                     </div>
                     <div class="col-sm-4">
@@ -201,74 +485,131 @@
 
         <section id="portfolio" class="site-section section-portfolio">
             <div class="container">
-                <div class="text-center">
-                    <h3>My recent Achievements </h3>
-                    <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+              <div class="text-center">
+                <h3>My recent Achievements</h3>
+                <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+              </div>
+          
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+          
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide">
+                    <div class="portfolio-item">
+                      <img src="assets/img/newtourify.app.png" class="img-res" alt="">
+                      <div class="portfolio-item-info">
+                        <h4>TOURIFY</h4>
+                        <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                    <div class="portfolio-item">
+                      <img src="assets/img/boardradar.png" class="img-res" alt="">
+                      <div class="portfolio-item-info">
+                        <h4>BoardRadar</h4>
+                        <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Slide 3 -->
+                  <div class="swiper-slide">
+                    <div class="portfolio-item">
+                      <img src="assets/img/queuetrackr.app.png" class="img-res" alt="">
+                      <div class="portfolio-item-info">
+                        <h4>QueueTrackr</h4>
+                        <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Slide 4 -->
+                  <div class="swiper-slide">
+                    <div class="portfolio-item">
+                      <img src="assets/img/ALX.png" class="img-res" alt="">
+                      <div class="portfolio-item-info">
+                        <h4>ALX AiCE</h4>
+                        <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Slide 5 -->
+                  <div class="swiper-slide">
+                    <div class="portfolio-item">
+                      <img src="assets/img/programming founda duke.png" class="img-res" alt="">
+                      <div class="portfolio-item-info">
+                        <h4>Programming Foundations</h4>
+                        <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Slide 6 -->
+                  <div class="swiper-slide">
+                    <div class="portfolio-item">
+                      <img src="assets/img/ADFO.png" class="img-res" alt="">
+                      <div class="portfolio-item-info">
+                        <h4>ORACLE ADFO</h4>
+                        <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Slide 7 -->
+                  <div class="swiper-slide">
+                    <div class="portfolio-item">
+                      <img src="assets/img/operatingsystem.png" class="img-res" alt="">
+                      <div class="portfolio-item-info">
+                        <h4>Operating Systems</h4>
+                        <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Slide 8 -->
+                  <div class="swiper-slide">
+                    <div class="portfolio-item">
+                      <img src="assets/img/project management.png" class="img-res" alt="">
+                      <div class="portfolio-item-info">
+                        <h4>Project Management</h4>
+                        <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Slide 9 -->
+                  <div class="swiper-slide">
+                    <div class="portfolio-item">
+                      <img src="assets/img/DESIGN THINKING.png" class="img-res" alt="">
+                      <div class="portfolio-item-info">
+                        <h4>Design Thinking</h4>
+                        <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                      </div>
+                    </div>
+                  </div>
+          
                 </div>
-                <div class="row">
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="assets/img/TOURRIFY1.png" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>TOURIFY</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem1"><span class="glyphicon glyphicon-eye-open"></span></a>
-                        
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="assets/img/work1.png" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>Personal Portfolio</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem2"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="assets/img/work2a.png" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>GPA Calculator</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem3"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="assets/img/ALX.png" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>ALX AiCE</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem4"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="assets/img/programming founda duke.png" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>Programming Foundations</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem5"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="assets/img/ADFO.png" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>ORACLE ADFO</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem6"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                </div>
+          
+                <!-- Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
-        </section><!-- /.secton-portfolio -->
+          </section>
+          
 
         <section class="site-section section-counters text-center">
             <div class="container">
@@ -314,20 +655,26 @@
     </main><!-- /#main -->
 
     
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 col-xs-12">
-                    <a class="icon gplus-bg" href="https://www.linkedin.com/in/kamarudeen-abubakar-b9b436260/"><i class="icon-linkedin"></i></a>
-                    <a class="icon linkedin-bg" href="#"><i class="icon-gplus"></i></a>
-                </div>
-                <div class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3"><p class="copyright">2017. All Rights Reserved</p></div>
-                <div class="col-sm-4 col-xs-3">
-                    <div class="text-right page-scroll">
-                        <a class="icon icon-up-bg" href="#hero"><i class="icon-up"></i></a>
-                    </div>
-                </div>
+    <div class="container footer-container">
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <a class="icon gplus-bg" href="https://www.linkedin.com/in/kamarudeen-abubakar-b9b436260/"><i class="icon-linkedin"></i></a>
+            <a class="icon linkedin-bg" href="#"><i class="icon-gplus"></i></a>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <p class="copyright">
+              ©2025. All Rights Reserved <br> KamarThinks Innovations
+            </p>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="page-scroll">
+              <a class="icon icon-up-bg" href="#hero"><i class="icon-up"></i></a>
             </div>
+          </div>
         </div>
+      </div>
+      
+      
    
 
     <!-- Modals -->
@@ -336,7 +683,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-            <img class="img-res" src="assets/imG/tourify2.png" alt="">
+            <img class="img-res" src="assets/imG/newtourify.app.png" alt="">
           </div>
           <div class="modal-body">
             <h4 class="modal-title">TOURIFY</h4>
@@ -354,14 +701,14 @@
         <div class="modal-content">
           <div class="modal-header">
             <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-            <img class="img-res" src="assets/img/portfolio-2.jpg" alt="">
+            <img class="img-res" src="assets/img/boardradar.png" alt="">
           </div>
           <div class="modal-body">
-            <h4 class="modal-title">Project title</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+            <h4 class="modal-title">BoardRadar</h4>
+            <p>A simple but unique board game collection tracker that allows board game enthusiasts properly catalog and store their favorite board games and track play sessions</p>
           </div>
           <div class="modal-footer">
-            <a href="#" class="btn btn-fill">Visit Page</a>
+            <a href="https://boardradar.onrender.com" class="btn btn-fill">Visit Page</a>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -372,73 +719,20 @@
         <div class="modal-content">
           <div class="modal-header">
             <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-            <img class="img-res" src="assets/img/portfolio-3.jpg" alt="">
+            <img class="img-res" src="assets/img/queuetrackr.app.png" alt="">
           </div>
           <div class="modal-body">
-            <h4 class="modal-title">Project title</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+            <h4 class="modal-title">QueueTrackr</h4>
+            <p>QueueTrackr is a smart, real-time queue management system built for universities. It allows admin staff to manage queues digitally while students join and track their position seamlessly — eliminating physical waiting lines.</p>
           </div>
           <div class="modal-footer">
-            <a href="#" class="btn btn-fill">Visit Page</a>
+            <a href="https://queuetrackrweb.vercel.app" class="btn btn-fill">Visit Page</a>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-    <div id="portfolioItem4" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-            <img class="img-res" src="assets/img/portfolio-4.jpg" alt="">
-          </div>
-          <div class="modal-body">
-            <h4 class="modal-title">Project title</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-          </div>
-          <div class="modal-footer">
-            <a href="#" class="btn btn-fill">Visit Page</a>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem5" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-            <img class="img-res" src="assets/img/portfolio-5.jpg" alt="">
-          </div>
-          <div class="modal-body">
-            <h4 class="modal-title">Project title</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-          </div>
-          <div class="modal-footer">
-            <a href="#" class="btn btn-fill">Visit Page</a>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem6" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-            <img class="img-res" src="assets/img/portfolio-6.jpg" alt="">
-          </div>
-          <div class="modal-body">
-            <h4 class="modal-title">Project title</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-          </div>
-          <div class="modal-footer">
-            <a href="#" class="btn btn-fill">Visit Page</a>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -449,6 +743,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
     <script src="assets/js/jquery.countTo.min.js"></script>
     <script src="assets/js/script.js"></script>
+  
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        }
+      }
+    });
+  </script>
   
 </body>
 </html>
